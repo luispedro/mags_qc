@@ -2,6 +2,8 @@ import subprocess
 from os import path, makedirs
 from jug import TaskGenerator
 
+CHECKM2_THREADS = 8
+
 
 @TaskGenerator
 def download_checkm2_database():
@@ -26,6 +28,7 @@ def run_checkm2(databases_dir):
              '--input', 'data',
              '--output-directory', 'checkm2_output',
              '-x', '.fna.gz',
+             '--threads', str(CHECKM2_THREADS),
              '--database_path', databases_dir + '/CheckM2_database/uniref100.KO.1.dmnd'])
     return 'checkm2_output'
 
