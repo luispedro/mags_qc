@@ -26,7 +26,7 @@ def run_checkm2(databases_dir):
              '--input', 'data',
              '--output-directory', 'checkm2_output',
              '-x', '.fna.gz',
-             '--database_path', databases_dir])
+             '--database_path', databases_dir + '/CheckM2_database/uniref100.KO.1.dmnd'])
     return 'checkm2_output'
 
 
