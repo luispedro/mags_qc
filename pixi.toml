@@ -10,3 +10,6 @@ version = "0.1.0"
 [dependencies]
 checkm2 = ">=1.1.0,<2"
 jug = ">=2.4.0,<3"
+polars = ">=1.30.0,<2"
+matplotlib = ">=3.10.3,<4"
+ipython = ">=9.3.0,<10"
