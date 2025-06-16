@@ -35,6 +35,16 @@ Step 1: run checkM2 on the MAGs
 jug execute run_checkm2.py
 ```
 
+Step 2: run the plotting script
+
+```bash
+python quality_figures.py
+```
+
+Which will generate the following figure
+
+![Quality Figure](plots/quality_scatter_with_histograms.svg)
+
 ## LICENSE
 
 This project is licensed under the MIT License - see the [COPYING.MIT](COPYING.MIT) file for details.
