@@ -20,4 +20,14 @@ axes[1,0].set_xlabel('Completeness')
 axes[1,0].set_ylabel('Contamination')
 sns.despine(fig, trim=True)
 fig.tight_layout()
-plt.savefig('plots/quality_scatter_with_histograms.svg', bbox_inches='tight')
+fig.savefig('plots/quality_scatter_with_histograms.svg', bbox_inches='tight')
+
+fig,ax = plt.subplots()
+ax.scatter(qs['Average_Gene_Length'], 100*qs['Coding_Density'])
+ax.set_ylabel('Coding density (%)')
+ax.set_xlabel('Average gene length (aa)')
+sns.despine(fig, trim=True)
+fig.tight_layout()
+fig.savefig('plots/average_gene_length_vs_coding_density.svg', bbox_inches='tight')
+
+
