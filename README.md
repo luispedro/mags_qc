@@ -41,9 +41,15 @@ Step 2: run the plotting script
 python quality_figures.py
 ```
 
-Which will generate the following figure
+Which will generate the following figures
+
+### Overall quality of the MAGs
 
 ![Quality Figure](plots/quality_scatter_with_histograms.svg)
+
+### Coding density vs. gene size
+
+![Coding Density vs Gene Size](plots/average_gene_length_vs_coding_density.svg)
 
 ## LICENSE
 
